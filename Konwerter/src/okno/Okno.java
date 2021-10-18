@@ -7,7 +7,7 @@ import javax.swing.*;
  * Klasa glowna programu.
  * @author swmar
  */
-public class Okno extends JFrame{
+public class Okno extends JFrame {
   /**nr serializacji klasy*/
   private static final long serialVersionUID = -7479134393755736395L;
   /**glowny label programu*/
@@ -19,12 +19,12 @@ public class Okno extends JFrame{
   /**
    * Konstruktor klasy Okno.
    */
-  public Okno() 
-  {
+  
+  public Okno() {
     super("Konwerter");
     final JPanel panelegre = new JPanel();
-    panelegre.setLayout(new GridLayout(1,2));
-    setLayout(new GridLayout(2,1));
+    panelegre.setLayout(new GridLayout(1, 2));
+    setLayout(new GridLayout(2, 1));
     
     przyciskCcm.addActionListener(new Dlugosc(this, "Konwerter dlugosci", false));
     przyciskCf.addActionListener(new Stopnie(this, "Konwerter stopni", true));

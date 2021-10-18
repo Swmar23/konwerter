@@ -24,10 +24,11 @@ class Dlugosc extends JDialog implements ActionListener {
   private final transient JTextField textCm = new JTextField();
   
   public Dlugosc(final JFrame okno, final String tytul, final boolean a) {
-	  super(okno, tytul, a);
+    super(okno, tytul, a);
   }
-  public void actionPerformed(ActionEvent e) {    
-    JPanel panel = new JPanel();
+  
+  public void actionPerformed(final ActionEvent e) {    
+    final JPanel panel = new JPanel();
     panel.setLayout(new GridLayout(3, 2));
     
     textCal.addActionListener(new TextCal());
@@ -55,8 +56,7 @@ class Dlugosc extends JDialog implements ActionListener {
         double cal = Double.parseDouble(textCal.getText());
         String s = Double.toString(calnacm(cal));
         textCm.setText(s);  
-      }
-      catch (NumberFormatException n) {
+      } catch (NumberFormatException n) {
         JOptionPane.showMessageDialog(null, "Nieprawidlowy format liczby", "", JOptionPane.ERROR_MESSAGE);
       }  
     }
@@ -68,8 +68,7 @@ class Dlugosc extends JDialog implements ActionListener {
         final double cm = Double.parseDouble(textCm.getText());
         String s = Double.toString(cmnacal(cm));
         textCal.setText(s);  
-      }
-      catch (NumberFormatException n) {
+      } catch (NumberFormatException n) {
         JOptionPane.showMessageDialog(null, "Nieprawidlowy format liczby", "", JOptionPane.ERROR_MESSAGE);
       }
     }

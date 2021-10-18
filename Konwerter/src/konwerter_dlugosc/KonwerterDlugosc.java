@@ -13,14 +13,16 @@ public abstract class KonwerterDlugosc {
    * @param cal dlugosc w calach
    * @return dlugosc w centymetrach
    */
+  
   public static double calnacm(final double cal) {
     return cal * PRZELICZNIK;
   }
   /**
    * Metoda przeliczajaca centymetry na cale.
-   * @param cm dlugosc w centymetrach
+   * @param centymetr dlugosc w centymetrach
    * @return dlugosc w calach
    */
+  
   public static double cmnacal(final double centymetr) {
     return centymetr / PRZELICZNIK;
   }

@@ -39,7 +39,7 @@ class Stopnie extends JDialog implements ActionListener {
    * @param alleluja modal
    */
   public Stopnie(final JFrame okno, final String tytul, final boolean alleluja) {
-	  super(okno, tytul, alleluja);
+    super(okno, tytul, alleluja);
   }
   
   /**
@@ -96,7 +96,7 @@ class Stopnie extends JDialog implements ActionListener {
   }
   
   class Wyczysc implements ActionListener {
-	@Override
+    @Override
     public void actionPerformed(final ActionEvent event) {
       textCel.setText(null);
       textFah.setText(null);
